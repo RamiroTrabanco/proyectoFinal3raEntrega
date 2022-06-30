@@ -15,6 +15,10 @@ h1 {
   border: solid black 20px;
 }
 
+.fontColorBlanco {
+  color: white;
+}
+
 .h2Titulo {
   grid-area: titulo;
   background-color: #525252;
