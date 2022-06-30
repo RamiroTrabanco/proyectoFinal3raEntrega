@@ -1,0 +1,144 @@
+$blanco: white;
+$grisFondo: #525252;
+$negro: black;
+$grisTitulo:#414141;
+$colorBorde: #CA3E47;
+
+/*                                                                                                  TABLET*/
+
+@media (max-width:1023px) and (min-width:481px){
+    .gridFlex {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "bienvenida"
+        "ingresos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 4% auto auto 10%;
+    }
+
+    header h1 {
+    background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 40px;
+    text-align: center;
+    color: $grisTitulo;
+    border: solid $negro 20px;}
+
+    nav a{
+        font-size: 20px;
+        }
+
+    .navFlex {
+            display:flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+    }
+
+    .indexSpanFlex {
+        display: flex;
+        flex-flow: nowrap column;
+        font-size: 20px;
+        padding: 25px;
+        background-color: $grisFondo;
+        background-image: none;
+    }
+
+    .indexFlex {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    section h2 {
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+    footer p, footer a {
+        font-size: 12px;
+    }
+
+    .productosFlex {
+        background-image: none;
+    }
+
+    .outletFlex {
+        background-image: linear-gradient(to bottom, $grisFondo 85%, $negro);
+    }
+    
+    .gridProductos
+        {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "titulo"
+        "ingresos"
+        "productos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 4% auto auto auto 10%;
+        }
+        
+
+    .gridOutlet {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "titulo"
+        "ingresos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 4% auto auto 10%;
+    }
+    
+    .gridVisitanos {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "titulo"
+        "ingresos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 4% 10% auto 10%;
+    }
+    
+
+    .gridContacto {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "ingresos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 4% auto 10%;
+    }
+
+    section {
+        form {
+            width: 35%;
+            @include flex (flex, column, nowrap);
+            margin-left: 25%;
+            margin-top: 30px;
+        }
+        form button {
+            width: 36%;
+            margin-top: 20px;
+            margin-left: 64%;
+            }
+        }
+    }

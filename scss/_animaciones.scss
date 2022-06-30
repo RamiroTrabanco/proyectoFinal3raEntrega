@@ -1,0 +1,13 @@
+$blanco: white;
+$grisFondo: #525252;
+$negro: black;
+$grisTitulo:#414141;
+$colorBorde: #CA3E47;
+
+.transicionProductos {
+    transition: all 1s;
+}
+
+.transicionProductos:hover {
+    transform:scale(1.15);
+}
