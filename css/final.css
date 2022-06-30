@@ -6,6 +6,7 @@
 }
 
 h1 {
+  color: #414141;
   background-image: url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
   background-repeat: no-repeat;
   background-position: left center;
@@ -252,7 +253,7 @@ section iframe {
     text-decoration: underline;
   }
   footer p, footer a {
-    font-size: 12px;
+    font-size: 9px;
   }
   .productosFlex, .outletFlex, .visitanosFlex, .contactoFlex {
     background-image: none;
